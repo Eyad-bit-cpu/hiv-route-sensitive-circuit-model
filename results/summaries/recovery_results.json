@@ -1,0 +1,18 @@
+{
+  "model_version": "1.2.1",
+  "protocol": "two_phase_trigger_source_removal",
+  "trigger_removal_day": 14.0,
+  "scripted_route_input_after_release": 0.0,
+  "infection_source_states_cleared_at_release": [
+    "E5",
+    "E4",
+    "I5",
+    "I4",
+    "V5",
+    "V4"
+  ],
+  "circuit_and_receptor_states_preserved_at_release": true,
+  "t_recovery_days": 5.850826325042924,
+  "recovery_achieved": true,
+  "recovery_threshold": 0.9
+}

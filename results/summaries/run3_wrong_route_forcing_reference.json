@@ -1,0 +1,11 @@
+{
+  "reference": "peak eta*inf5_E in baseline run1_r5_circuit",
+  "peak_infection_derived_R5_route_input": 0.12548665402477702,
+  "time_of_peak_days": 10.112640801001252,
+  "registered_run3_P5": 1.2,
+  "registered_run3_P5_over_reference_peak": 9.562769916257892,
+  "registered_run3_duration_days": 40.0,
+  "baseline_background_P5": 0.02,
+  "baseline_background_P5_over_reference_peak": 0.1593794986042982,
+  "interpretation": "Internal model-scale comparison only; P5 is dimensionless and is not calibrated to a measured physiological CCR5 signal."
+}
