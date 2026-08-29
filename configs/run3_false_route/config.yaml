@@ -1,0 +1,12 @@
+name: run3_false_route
+description: X4 HIV + high physiological CCR5 activity. Central adversarial figure.
+circuit_on: true
+V4_0: 10
+P5: 1.2
+P4: 0.02
+grid:
+  t_half_A: logspace 5min to 48h
+  T_A: 0.1 to 0.7
+outputs:
+  - E_V
+  - false CCR5 suppression

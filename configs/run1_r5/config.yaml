@@ -1,0 +1,7 @@
+name: run1_r5
+description: Baseline R5 challenge, control vs circuit. Asks only whether the loop can suppress an R5 outbreak.
+t_end: 40
+V5_0: 10
+V4_0: 0
+P5: 0.02
+P4: 0.02

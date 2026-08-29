@@ -1,0 +1,29 @@
+# Frozen before headline sweeps. Do not edit to rescue a figure.
+# Create success_criteria_v2.yaml if criteria must change, and explain why.
+
+horizon_days: 40.0
+master_seed: 20260827
+model_version: "1.2.1"
+
+antiviral_efficacy:
+  E_V_success: 0.50
+  E_V_partial: 0.25
+
+false_suppression:
+  # Mean fractional loss of the non-required surface receptor over the horizon.
+  F_max_success: 0.25
+  F_max_partial: 0.40
+
+recovery:
+  # Time for the registered suppressed receptor to return to 90% of baseline after the recovery-test trigger sources (scripted route input and active infection source) are removed.
+  t_recovery_max_days: 14.0
+  recovery_fraction: 0.90
+
+physiological_preservation:
+  # P_R = 1 - mean(1 - R_nonrequired); success if P_R >= 1 - F_max_success
+  description: "Registered via false_suppression.F_max_success"
+
+negative_result_policy: >
+  Regions with poor viral control, excessive physiological receptor suppression,
+  unstable or negative states, failure to track tropism, or kinetic requirements
+  outside documented biological timescales are retained and reported.

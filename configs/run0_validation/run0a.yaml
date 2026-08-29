@@ -1,0 +1,8 @@
+name: run0a_backbone
+description: HIV backbone only. Circuit off. If this is insane, stop.
+circuit_on: false
+t_end: 40
+V5_0: 10
+V4_0: 0
+solver: LSODA
+cross_check_solver: BDF

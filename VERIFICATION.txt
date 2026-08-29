@@ -1,0 +1,16 @@
+Verified 2026-08-28:
+- Model version: 1.2.1 (audit-hardened source/figure/manuscript release).
+- pytest -q: 28 passed, including new forensic regression tests for Run 3, Run 5, Run 6, Run 7, and Run 9.
+- Run 3: persistent wrong-route co-activation is robust across representative (t_half_A, T_A) sweep corners; no efficacy-specificity trade-off is claimed.
+- Run 4 figures explicitly separate scripted P5(t) from infection-driven eta*inf5_E and display downstream B/C5/CCR5 feedback.
+- Run 5 suppression share is NaN/masked until total receptor suppression is meaningful.
+- Run 6 canonical scenario/output naming: run6_secondary_x4_emergence, fig_run6_secondary_x4_emergence.png, run6_crossover_time.json; legacy run6_tropism_shift remains an alias only.
+- Run 7: tau_B is treated as HIV-confirmation delay; regression test verifies delayed false-suppression onset with unchanged near-asymptotic late suppression.
+- Run 9: true fast-only and sustained-only arm isolation is regression-tested through k_intC/k_synC/k_recC scales.
+- Figure 8 uses manuscript mathematical parameter labels.
+- Recovery protocol remains the corrected v1.2.1 two-phase release test; R5 reaches 90% baseline in ~5.85 days.
+
+- Reviewer-comment hardening: Run 3 now includes a graded persistent wrong-route forcing sweep scaled to the peak baseline infection-derived eta*inf5_E route input; P5=1.2 is ~9.56x that internal reference and explicitly treated as an extreme adversarial stress condition, not a physiological calibration.
+- Reviewer-comment hardening: B is fully documented as I5+I4 -> Hill production -> Q1-Q3 Erlang delay -> B decay, with tau_B and t_half_B distinguished.
+
+- Full campaign after reviewer-comment hardening: completed successfully; baseline exploratory class remained FAILED with E_V=0.4528212218598172.
